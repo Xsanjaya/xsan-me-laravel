@@ -1,5 +1,4 @@
-@extends('layouts.lyadmin')
-@extends('layouts.app')
+@extends('layouts.lymaster')
 <body class="authentication-bg authentication-bg-pattern">
     <div class="account-pages mt-5 mb-5">
         <div class="container">
@@ -18,22 +17,16 @@
 
                             <form method="POST" action="{{ route('login') }}">
                             @csrf
-
-                            
                                 <div class="form-group mb-3">
-                                    <label for="emailaddress">{{ __('E-Mail Address') }}</label>
-                                    <input class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" type="email" required autocomplete="email" autofocus placeholder="Enter your email">
-                                    @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                    @enderror
+                                    <label for="email">{{ __('E-Mail Address') }}</label>
+                                    <input type="text" class="form-control" name="identity" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 </div>
 
 
                                 <div class="form-group mb-3">
-                                    <label for="password">Password</label>
-                                    <input class="form-control @error('password') is-invalid @enderror" type="password" required autocomplete="current-password" id="password" placeholder="Enter your password">
+                                    <label for="password">{{ __('Password') }}</label>
+                                    <input class="form-control @error('password') is-invalid @enderror" type="password" name="password" id="password" placeholder="Enter your password" required autocomplete="current-password">
+                                    
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

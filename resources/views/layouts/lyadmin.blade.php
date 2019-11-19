@@ -15,6 +15,10 @@
         <link href="/../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <link href="/../assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
+        <!-- Footable css -->
+        <link href="/../assets/libs/footable/footable.core.min.css" rel="stylesheet" type="text/css" />
+
+
     </head>
 
     <body>
@@ -23,7 +27,8 @@
         <div id="wrapper">
 
             <!-- Topbar Start -->
-            <div class="navbar-custom">
+            <!-- Topbar Start -->
+            <div class="navbar-custom" >
                 <ul class="list-unstyled topnav-menu float-right mb-0">
 
                     <li class="d-none d-sm-block">
@@ -115,7 +120,7 @@
                         <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                             <img src="/../assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
                             <span class="pro-user-name ml-1">
-                                nama user <i class="mdi mdi-chevron-down"></i> 
+                                 {{ Auth::user()->name }}<i class="mdi mdi-chevron-down"></i> 
                             </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
@@ -145,10 +150,14 @@
                             <div class="dropdown-divider"></div>
 
                             <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <a href="#" onclick="document.getElementById('form-logout').submit()" class="dropdown-item notify-item">
                                 <i class="fe-log-out"></i>
                                 <span>Logout</span>
                             </a>
+
+                            <form style="display: none;" action="{{ route('logout') }}" method="POST" id="form-logout">
+                                @csrf
+                            </form>
 
                         </div>
                     </li>
@@ -164,7 +173,7 @@
 
                 <!-- LOGO -->
                 <div class="logo-box">
-                    <a href="/dashboard/welcome" class="logo text-center">
+                    <a href="/dashboard/" class="logo text-center">
                         <span class="logo-lg">
                             <img src="/../assets/images/logo-light.png" alt="" height="18">
                             <!-- <span class="logo-lg-text-light">UBold</span> -->
@@ -262,11 +271,45 @@
             </div>
             <!-- end Topbar -->
 
+
+            <!-- end Topbar -->
+
             <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
 
+                <div class="slimscroll-menu">
 
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
 
-            
+                        <ul class="metismenu" id="side-menu">
+
+                            <li class="menu-title">Navigation</li>
+
+                            <li>
+                                <a href="/dashboard/">
+                                    <i class="fe-airplay"></i>
+                                    <span class="badge badge-info badge-pill float-right"></span>
+                                    <span> Dashboards </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-title mt-2">Components</li>
+
+                            <li>
+                                <a href="/dashboard/book">
+                                    <i class="fe-cpu"></i>
+                                    <span> Table Book </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Sidebar -->
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Sidebar -left -->
+            </div>
+
 
             <!-- Left Sidebar End -->
 
@@ -279,28 +322,11 @@
 
                     <!-- Start Content-->
                     <div class="container-fluid">
-                        
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box">
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);"></a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);"></a></li>
-                                            <li class="breadcrumb-item active"></li>
-                                        </ol>
-                                    </div>
-                                    <h4 class="page-title"></h4>
-                                </div>
-                            </div>
-                        </div>     
-                        <!-- end page title --> 
-                        
-                    </div> <!-- container -->
-
-                </div> 
                     @yield('contently')
+                    </div> 
+                    <!-- container -->
+
+                </div>    
                 <!-- content -->
 
                 <!-- Footer Start -->
@@ -308,7 +334,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                2015 - 2019 &copy; UBold theme by <a href="">Coderthemes</a> 
+                                2019 &copy; x <a href="">ikhsan.me</a> 
                             </div>
                             <div class="col-md-6">
                                 <div class="text-md-right footer-links d-none d-sm-block">
@@ -332,6 +358,7 @@
         <!-- END wrapper -->
 
         <!-- Right Sidebar -->
+        <!-- Right Sidebar -->
         <div class="right-bar">
             <div class="rightbar-title">
                 <a href="javascript:void(0);" class="right-bar-toggle float-right">
@@ -347,7 +374,7 @@
                         <a href="javascript:void(0);" class="user-edit"><i class="mdi mdi-pencil"></i></a>
                     </div>
             
-                    <h5><a href="javascript: void(0);">Nama User</a> </h5>
+                    <h5><a href="javascript: void(0);">{{ Auth::user()->name }}</a> </h5>
                     <p class="text-muted mb-0"><small>User Poss</small></p>
                 </div>
 
@@ -400,27 +427,7 @@
                             <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Tomaslau</a></p>
                             <p class="inbox-item-text">I've finished it! See you so...</p>
                         </div>
-                        <div class="inbox-item">
-                            <div class="inbox-item-img"><img src="/../assets/images/users/user-3.jpg" class="rounded-circle" alt=""></div>
-                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Stillnotdavid</a></p>
-                            <p class="inbox-item-text">This theme is awesome!</p>
-                        </div>
-                        <div class="inbox-item">
-                            <div class="inbox-item-img"><img src="/../assets/images/users/user-4.jpg" class="rounded-circle" alt=""></div>
-                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Kurafire</a></p>
-                            <p class="inbox-item-text">Nice to meet you</p>
-                        </div>
-
-                        <div class="inbox-item">
-                            <div class="inbox-item-img"><img src="/../assets/images/users/user-5.jpg" class="rounded-circle" alt=""></div>
-                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Shahedk</a></p>
-                            <p class="inbox-item-text">Hey! there I'm available...</p>
-                        </div>
-                        <div class="inbox-item">
-                            <div class="inbox-item-img"><img src="/../assets/images/users/user-6.jpg" class="rounded-circle" alt=""></div>
-                            <p class="inbox-item-author"><a href="javascript: void(0);" class="text-dark">Adhamdannaway</a></p>
-                            <p class="inbox-item-text">This theme is awesome!</p>
-                        </div>
+                        
                     </div> <!-- end inbox-widget -->
                 </div> <!-- end .p-3-->
 
@@ -436,6 +443,12 @@
 
         <!-- App js -->
         <script src="/../assets/js/app.min.js"></script>
+
+         <!-- Footable js -->
+        <script src="/../assets/libs/footable/footable.all.min.js"></script>
+
+        <!-- Init js -->
+        <script src="/../assets/js/pages/foo-tables.init.js"></script>
         
     </body>
 </html>

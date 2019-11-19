@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Book;
 use Illuminate\Http\Request;
 
 class DashboardControl extends Controller
@@ -11,10 +12,10 @@ class DashboardControl extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -22,7 +23,21 @@ class DashboardControl extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        return view('dashboard.index');
-    }
+        {
+            if(!auth()->user()){
+                return redirect('/login');
+            }
+            return view('dashboard.index');
+        }
+
+    public function bookedit(Book $book, $id)
+        {
+            $book = $book->find($id);
+            return view('dashboard.book-edit',
+                [
+                    'dbk'=>$book,
+                    'id'=>$id,
+                ] );
+           
+        }
 }

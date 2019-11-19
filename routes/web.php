@@ -10,11 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () 
-	{
-    	return view('welcome');
-	});
+Route::get('/', 'PageControl@index');
 
 Auth::routes();
-Route::get('/dashboard', 'DashboardControl@index')->name('admin');
+Route::get('/dashboard', 'DashboardControl@index')->name('dashboard');
+
+Route::get('/dashboard/book', 'BookControl@index');
+Route::post('/dashboard/create', 'BookControl@create');
+Route::delete('/dashboard/del{id}', 'BookControl@destroy');
+
+Route::get('/dashboard/edit{id}', 'DashboardControl@bookedit');
+Route::patch('/dashboard/edit{id}', 'BookControl@edit');
+
