@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\User;
 use Illuminate\Http\Request;
 
 class DashboardControl extends Controller
@@ -40,4 +41,5 @@ class DashboardControl extends Controller
                 ] );
            
         }
+
 }

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Mikhsannaj | Dashboard </title>
+        <title>xsan | Dashboard </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -302,6 +302,12 @@
                                     <span> Table Book </span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/dashboard/member">
+                                    <i class="fe-user"></i>
+                                    <span> Table Member </span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <!-- End Sidebar -->
@@ -375,7 +381,7 @@
                     </div>
             
                     <h5><a href="javascript: void(0);">{{ Auth::user()->name }}</a> </h5>
-                    <p class="text-muted mb-0"><small>User Poss</small></p>
+                    <p class="text-muted mb-0"><small>{{ Auth::user()->position }}</small></p>
                 </div>
 
                 <!-- Settings -->

@@ -86,7 +86,7 @@
     <!-- end page -->
 
     <footer class="footer footer-alt">
-        2019 &copy; by <a href="" class="text-white-50">LLL</a> 
+        2019 &copy; by <a href="" class="text-white-50">xsan</a> 
     </footer>
 
     <!-- Vendor js -->
