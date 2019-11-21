@@ -78,7 +78,7 @@
                     <div class="row mt-3">
                         <div class="col-12 text-center">
                             <p> <a href="pages-recoverpw.html" class="text-white-50 ml-1">Forgot your password?</a></p>
-                            <p class="text-white-50">Don't have an account? <a href="pages-register.html" class="text-white ml-1"><b>Sign Up</b></a></p>
+                            <p class="text-white-50">Don't have an account? <a href="register" class="text-white ml-1"><b>Sign Up</b></a></p>
                         </div> <!-- end col -->
                     </div>
                     <!-- end row -->
