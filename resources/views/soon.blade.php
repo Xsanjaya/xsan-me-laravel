@@ -7,9 +7,7 @@
 
                 <div class="text-center">
                     <h2>
-                        <a href="index.html">
-                            <img src="assets/images/logo-dark.png" alt="main-logo" height="24" />
-                        </a>
+                        
                     </h2>
 
                     <svg class="svg-rocket mt-md-5 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.07909 127.50572">
@@ -41,7 +39,7 @@
                         </g>
                     </svg>
 
-                    <h3 class="mt-4">Stay tunned, we're launching very soon</h3>
+                    <h3 class="mt-4">Stay tunned, xsan.me launching very soon</h3>
                     <p class="text-muted">We're making the system more awesome.</p>
 
                     <div class="row mt-5 justify-content-center">
