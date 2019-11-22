@@ -17,9 +17,10 @@ Route::get('/dashboard', 'DashboardControl@index')->name('dashboard');
 
 Route::get('/dashboard/book', 'BookControl@index');
 Route::post('/dashboard/create', 'BookControl@create');
-Route::delete('/dashboard/del{id}', 'BookControl@destroy');
 Route::get('/dashboard/edit{id}', 'DashboardControl@bookedit');
 Route::patch('/dashboard/edit{id}', 'BookControl@edit');
+Route::delete('/dashboard/del{id}', 'BookControl@destroy');
 
 Route::get('/dashboard/member', 'MemberControl@index');
+Route::get('/dashboard/member{id}', 'MemberControl@edit');
 

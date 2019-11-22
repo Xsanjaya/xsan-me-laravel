@@ -18,7 +18,7 @@
                             <form method="POST" action="{{ route('login') }}">
                             @csrf
                                 <div class="form-group mb-3">
-                                    <label for="email">{{ __('E-Mail Address') }} or Username</label>
+                                    <label for="email">{{ __('E-Mail Address or Username') }} </label>
                                     <input type="text" class="form-control" name="identity" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 </div>
 

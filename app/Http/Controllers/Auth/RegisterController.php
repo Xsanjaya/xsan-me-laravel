@@ -56,6 +56,7 @@ class RegisterController extends Controller
             'username'  => ['required', 'string', 'max:20', 'unique:users'],
             'email'     => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password'  => ['required', 'string', 'min:8'],
+            'position'  => ['required', 'string'],
         
         ]);
     }
@@ -68,6 +69,9 @@ class RegisterController extends Controller
      */
     
     public function register(Request $request){
+        
+        dd($request->all());
+
         $this->validator($request->all());
         $this->create($request->all());
         return redirect('login');
@@ -81,6 +85,7 @@ class RegisterController extends Controller
             'username'  => $data['username'],
             'email'     => $data['email'],
             'password'  => Hash::make($data['password']),
+            'position'  => $data['position'],
         ]);
     }
 }

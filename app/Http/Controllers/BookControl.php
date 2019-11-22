@@ -11,7 +11,7 @@ class BookControl extends Controller
     {
         $book = Book::all();
         // dd($book);
-        return view('dashboard.table-book',['book'=>$book]);
+        return view('dashboard.book-table',['book'=>$book]);
         
     }
 
