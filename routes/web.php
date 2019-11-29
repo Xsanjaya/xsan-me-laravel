@@ -23,4 +23,9 @@ Route::delete('/dashboard/del{id}', 'BookControl@destroy');
 
 Route::get('/dashboard/member', 'MemberControl@index');
 Route::get('/dashboard/member{id}', 'MemberControl@edit');
+Route::post('/dashboard/addmember', 'MemberControl@register');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

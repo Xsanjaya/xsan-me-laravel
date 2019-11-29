@@ -8,8 +8,8 @@ class PageControl extends Controller
 {
     public function index()
     {
-//        return view('home');
-        return view('soon');
+       return view('home');
+        // return view('soon');
     }
 
 }

@@ -70,8 +70,6 @@ class RegisterController extends Controller
     
     public function register(Request $request){
         
-        dd($request->all());
-
         $this->validator($request->all());
         $this->create($request->all());
         return redirect('login');
