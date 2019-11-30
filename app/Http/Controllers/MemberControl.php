@@ -39,7 +39,7 @@ class MemberControl extends Controller
         {
             $this->validator($request->all());
             $this->create($request->all());
-            return redirect('login');
+            return redirect('dashboard/member');
         }
 
     protected function create(array $data)
@@ -66,4 +66,13 @@ class MemberControl extends Controller
             
             ]);
         }
+    
+    public function destroy(User $member, $id)
+        {   
+            $member = $member->find($id);
+            $member->delete();
+            return redirect('dashboard/member')->with('pesan', 'Data Berhasil Dihapus');
+        }
+     
+    
 }

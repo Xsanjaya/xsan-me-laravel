@@ -7,7 +7,7 @@
         <meta name="author" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>mikhsannaj</title>
+        <title>Xsan</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="assetsHome/images/favicon.png">
         <!-- ##### STYLESHEETS ##### -->
@@ -56,7 +56,7 @@
         <button class="toggle-btn">
           <span class="lines"></span>
         </button><!-- hamburger button will only appear on mobile -->
-        <div class="menu">
+        <!-- <div class="menu">
             <ul>
                 <li class="page-link active-page" data-page="home">
                     <i class="icon icon-basic-home"></i>
@@ -77,7 +77,8 @@
                     <i class="icon icon-basic-mail"></i>
                 </li>
             </ul>
-        </div>
+        </div> -->
+
         <!-- end Toggle menu -->
         <!-- Pages Container -->
 <div class="container">
@@ -92,7 +93,7 @@
                         <img src="assetsHome/images/avatar-2.jpg" alt=""><!-- Image 2 source -->
                     </div>
                     <h1>Mohamad Ikhsan Nudin</h1>
-                    <h3>I'm a Professional. . . <br>&amp; Buzzer</h3>
+                    <h3>I'm a Electrical Engineer <br>&amp; Professional Web Developer </h3>
                     <a class="btn-style" href="#">See Works</a><!-- button -->
                 </div>
                 <!-- social media links -->
@@ -106,6 +107,9 @@
                         </li>
                         <li>
                             <a href="https://www.instagram.com/ikhs.n/"><span data-hover="Behance">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/sabdajaya"><span data-hover="Behance">GitHub</span></a>
                         </li>
                     </ul>
                 </div><!-- end social media links -->

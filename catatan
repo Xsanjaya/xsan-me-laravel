@@ -5,3 +5,6 @@ ctrl+shift+D menggandakan syntax
 
 cooomm
 jancok
+  {!!Form::open(['route' => 'import.buku', 'class' => 'form-horizontal', 'enctype' => 'multipart/form-data'])!!}
+                        
+                        {!!Form::file('data_buku')!!}
