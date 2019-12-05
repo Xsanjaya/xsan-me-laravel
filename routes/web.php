@@ -11,6 +11,7 @@
 |
 */
 Route::get('/', 'PageControl@index');
+Route::get('/buku', 'PageControl@buku');
 
 Auth::routes();
 Route::get('/dashboard', 'DashboardControl@index')->name('dashboard');
@@ -28,7 +29,3 @@ Route::get('/dashboard/member{id}', 'MemberControl@edit');
 Route::post('/dashboard/addmember', 'MemberControl@register');
 Route::delete('/dashboard/mbrdel{id}', 'MemberControl@destroy');
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
