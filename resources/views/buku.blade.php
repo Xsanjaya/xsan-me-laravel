@@ -22,7 +22,7 @@
 
     <body>
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-md-12">
                                 <div class="card-box">
                                     <h4 class="header-title text-center">Daftar Buku</h4>
                                     <!-- <p class="sub-header">
@@ -73,11 +73,9 @@
                                 </div> <!-- end col -->
                             </div>
 
-
             <!-- ============================================================== -->
             <!-- End Page content -->
             <!-- ============================================================== -->
-        <!-- END wrapper -->
         <!-- Vendor js -->
         <script src="assets/js/vendor.min.js"></script>
 
