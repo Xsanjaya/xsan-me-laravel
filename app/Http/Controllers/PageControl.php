@@ -16,7 +16,9 @@ class PageControl extends Controller
     
     public function buku()
     {
-        $book = Book::all();
+        $books = Book::all();
+        $book = $books->sortBy('penulisBK');
+
         return view('buku',['book'=>$book]);
         
     }

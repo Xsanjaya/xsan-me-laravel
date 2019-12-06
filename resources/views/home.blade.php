@@ -54,15 +54,18 @@
 
         <!-- Toggle menu -->
         <button class="toggle-btn">
-          <span class="lines"></span>
+        <span class="lines"></span>
         </button><!-- hamburger button will only appear on mobile -->
         <div class="menu">
             <ul>
                 <li class="page-link active-page" data-page="home">
                     <i class="icon icon-basic-home"></i>
                 </li>
-                <li class="page-link" data-page="portfolio">
+                <!-- <li class="page-link" data-page="portfolio">
                     <i class="icon icon-basic-case"></i>
+                </li> -->
+                <li>
+                    <a style="background: none; color: #" href="buku" onclick="window.location.href='buku'"><i class="icon icon-basic-book"></i></a>
                 </li>
                 <li class="page-link" data-page="services">
                     <i class="icon icon-basic-gear"></i>
@@ -94,7 +97,8 @@
                     </div>
                     <h1>Mohamad Ikhsan Nudin</h1>
                     <h3>I'm a Electrical Engineer <br>&amp; Professional Web Developer </h3>
-                    <a class="btn-style" href="#">See Works</a><!-- button -->
+                    <!-- <a class="btn-style" href="#">See Works</a> -->
+                    <!-- button -->
                 </div>
                 <!-- social media links -->
                 <div class="home-social">
@@ -106,10 +110,10 @@
                             <a href="https://twitter.com/mikhsannaj"><span data-hover="Twitter">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/ikhs.n/"><span data-hover="Behance">Instagram</span></a>
+                            <a href="https://www.instagram.com/ikhs.n/"><span data-hover="Instagram">Instagram</span></a>
                         </li>
                         <li>
-                            <a href="https://www.github.com/sabdajaya"><span data-hover="Behance">GitHub</span></a>
+                            <a href="https://www.github.com/sabdajaya"><span data-hover="GitHub">GitHub</span></a>
                         </li>
                     </ul>
                 </div><!-- end social media links -->

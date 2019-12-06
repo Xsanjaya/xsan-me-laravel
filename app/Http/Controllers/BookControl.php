@@ -17,8 +17,8 @@ class BookControl extends Controller
 {
     public function index()
     {
-        $book = Book::all();
-        // dd($book);
+        $books = Book::all();
+        $book = $books->sortBy('penulisBK');
         return view('dashboard.book-table',['book'=>$book]);
         
     }
