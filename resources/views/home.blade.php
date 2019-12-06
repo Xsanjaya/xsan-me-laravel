@@ -78,8 +78,8 @@
                 </li>
             </ul>
         </div>
-
         <!-- end Toggle menu -->
+
         <!-- Pages Container -->
 <div class="container">
 
@@ -90,7 +90,7 @@
                 <div class="home-content">
                     <div class="home-avatar home-avatar-multi">
                         <img src="assetsHome/images/avatar.jpg" alt=""><!-- Image source -->
-                        <img src="assetsHome/images/avatar.jpg" alt=""><!-- Image 2 source -->
+                        <img src="assetsHome/images/avatar-2.jpg" alt=""><!-- Image 2 source -->
                     </div>
                     <h1>Mohamad Ikhsan Nudin</h1>
                     <h3>I'm a Electrical Engineer <br>&amp; Professional Web Developer </h3>
@@ -156,8 +156,7 @@
                 </div>
             </div><!-- end Portfolio -->
 
-
-            <!-- Skills -->
+                <!-- Skills -->
             <div class="skills-background">
                 <div class="row">
                     <!-- Skills box 1 -->
@@ -195,7 +194,7 @@
     <section id="services" class="page-content">
         <div class="servicesWrapper">
             <div class="services-background">
-                <h2 class="section-title"><i class="icon icon-basic-gear"></i>What I Do</h2><!-- Section Title -->
+                <h2 class="section-title"><i class="icon icon-basic-gear"></i>My Service</h2><!-- Section Title -->
                 <div class="row">
                     <!-- Services box 1 -->
                     <div class="col-xs-12 col-sm-6 col-md-4 services-box">
@@ -265,10 +264,62 @@
                     <div class="resume-background">
                         <h2 class="section-title"><i class="icon icon-basic-sheet-txt"></i>My Resume</h2>
                         <div class="row">
-                            
-                    </div>
-                    <!-- end resume -->
-                    
+                            <!-- Education -->
+                    <div class="col-xs-12 col-md-6 education-content">
+                        <!-- Education box 1 -->
+                        <div class="education-box">
+                            <div class="resume-icon">
+                                <i class="icon icon-basic-book"></i>
+                            </div>
+                            <span>2016-2017</span><h4>University of IT</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <!-- Education box 2 -->
+                        <div class="education-box">
+                            <div class="resume-icon">
+                                <i class="icon icon-basic-book"></i>
+                            </div>
+                            <span>2015-2016</span><h4>University of Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <!-- Education box 3 -->
+                        <div class="education-box">
+                            <div class="resume-icon">
+                                <i class="icon icon-basic-book"></i>
+                            </div>
+                            <span>2014-2015</span><h4>University of Art</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div><!-- end Education box 3 -->
+                    </div><!-- end education-content -->
+                                        <!-- Employment -->
+                    <div class="col-xs-12 col-md-6 employment-content">
+                        <div class="employment-box">
+                            <div class="resume-icon">
+                                <i class="icon icon-basic-case"></i>
+                            </div>
+                            <h4>ThemeForest</h4><span>2016-2017</span>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <!-- Employment box 2 -->
+                        <div class="employment-box">
+                            <div class="resume-icon">
+                                <i class="icon icon-basic-case"></i>
+                            </div>
+                            <h4>PhotoDune</h4><span>2015-2016</span>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div>
+                        <!-- Employment box 3 -->
+                        <div class="employment-box">
+                            <div class="resume-icon">
+                                <i class="icon icon-basic-case"></i>
+                            </div>
+                            <h4>CodeCanyon</h4><span>2014-2015</span>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        </div><!-- end Employment box 3 -->
+                    </div><!-- end employment-content -->
+                </div><!-- end row -->
+            </div>
+            <!-- end resume -->
                     <!-- Testimonial -->
                     <div class="testimonial-background">
                         <div class="testimonial-layer">
@@ -300,6 +351,101 @@
                 </div>
             </section>
             <!-- end Resume page -->
+
+             <!-- Blog page -->
+    <section id="blog" class="page-content">
+        <div class="blog-background">
+            <h2 class="section-title"><i class="icon icon-basic-message-multiple"></i>Blog Posts</h2><!-- Section title -->
+            <div id="blogSlider" class="owl-carousel">
+                <div class="blog-post-box">
+                    <div class="blog-post-box-image">
+                        <img src="assetsHome/images/blog-img-1.jpg" alt=""> 
+                        <!-- Image source -->
+                        <a href="postlink">
+                        <!-- blog post link -->
+                            <i class="icon icon-basic-link"></i>
+                        </a>
+                    </div>
+                    <div class="blog-post-box-content">
+                        {{--<span></span>--}}
+                        <h3>Blog Post title </h3>
+                        <!-- Blog Post title -->
+                        <p>Blog post short description</p>
+                        <!-- Blog post short description -->
+                        <a href="/post/" class="btn-style">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom navigation -->
+            <div class="customNavigation">
+                <ul>
+                    <li id="prev"><span><i class="fa fa-angle-left"></i></span></li>
+                    <li id="next"><span><i class="fa fa-angle-right"></i></span></li>
+                </ul>
+            </div>
+            <!-- end Custom navigation -->
+        </div>
+    </section>
+    <!-- end Blog page -->
+
+            <!-- Contact page -->
+    <section id="contact" class="page-content">
+        <div class="contactWrapper">
+            <div class="contact-background">
+                <h2 class="section-title"><i class="icon icon-basic-mail"></i>Get In Touch</h2><!-- Section title -->
+                <div class="row">
+                    <!-- Contact form -->
+                    <div class="col-xs-12 col-sm-6 contact-form">
+                        <form method="post" id="contactform">
+                            <div class="input-style">
+                                <div>
+                                    <input type="text" id="name" name="name" placeholder="Name">
+                                </div>
+                                <div>
+                                    <input type="email" id="email" name="email" placeholder="E-Mail">
+                                </div>
+                            </div>
+                            <div class="text-style">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                            <div class="submit-result"><!-- It will only appear after pushing submit button -->
+                                <p id="success">Your Message has been sent!</p>
+                                <p id="error">Something went wrong, go back and try again!</p>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="col-xs-12 col-sm-6 contact-info">
+                        <ul>
+                            <li>
+                                <h4>Phone</h4>
+                                <p>+(62) 89 818181 30</p>
+                            </li>
+                            <li>
+                                <h4>Email</h4>
+                                <p>xsan@xsan.me</p>
+                            </li>
+                            <li>
+                                <h4>Address</h4>
+                                <p>x</p>
+                            </li>
+                        </ul>
+                    </div><!-- end Contact Info -->
+                </div><!-- end row -->
+            </div>
+            <!-- Google Maps -->
+            <!-- <div class="google-maps">
+                <div id="map-canvas"></div>
+            </div>end Google Maps -->
+            <!-- Footer -->
+            <!-- <div class="footer-background">
+                <p>&copy; 2017 Flatheme, All Rights Reserved.</p>
+            </div> -->
+            <!-- end Footer -->
+        </div>
+    </section>
+    <!-- end Contact page -->
 
             
 
