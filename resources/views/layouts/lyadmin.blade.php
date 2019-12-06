@@ -298,7 +298,7 @@
 
                             <li>
                                 <a href="/dashboard/book">
-                                    <i class="fe-cpu"></i>
+                                    <i class="fe-book"></i>
                                     <span> Table Book </span>
                                 </a>
                             </li>
@@ -306,6 +306,12 @@
                                 <a href="/dashboard/member">
                                     <i class="fe-user"></i>
                                     <span> Table Member </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dashboard/blog">
+                                    <i class="fe-type"></i>
+                                    <span> Artikel </span>
                                 </a>
                             </li>
                         </ul>
