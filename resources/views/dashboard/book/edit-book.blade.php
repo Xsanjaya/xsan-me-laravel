@@ -22,6 +22,22 @@
                             <input type="" class="form-control" name="judulBK" placeholder="Judul Buku" value="{{$dbk->judulBK}}">
                         </div>
                     </div>
+                    <div class="form-group row mb-3">
+                        <label for="inputJudul" class="col-3 col-form-label">Kategori Buku</label>
+                        <div class="col-9">
+                            <input type="" class="form-control" name="kategoriBK" placeholder="Kategori Buku" value="{{$dbk->kategoriBK}}">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="inputJudul" class="col-3 col-form-label">Status Buku</label>
+                        <div class="col-9">
+                        <select name="statusBK" id="field-4" class="selectpicker form-control" data-style="btn-blue" value="{{$dbk->statusBK}}">
+                            <option>Tersedia</option>
+                            <option>Dipinjam</option>
+                            <option>Hilang</option>
+                        </select>
+                        </div>
+                    </div>
 
                     <div class="form-group mb-0 justify-content-end row">
                         <div class="col-9">

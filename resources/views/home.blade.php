@@ -276,7 +276,7 @@
                             <div class="resume-icon">
                                 <i class="icon icon-basic-book"></i>
                             </div>
-                            <span>2016-2017</span><h4>University of IT</h4>
+                            <span>2015-2020</span><h4>University of Jember</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                         </div>
                         <!-- Education box 2 -->
@@ -284,7 +284,7 @@
                             <div class="resume-icon">
                                 <i class="icon icon-basic-book"></i>
                             </div>
-                            <span>2015-2016</span><h4>University of Design</h4>
+                            <span>2012-2015</span><h4>SMK 17 Agustus 1945 Genteng</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                         </div>
                         <!-- Education box 3 -->
@@ -292,7 +292,7 @@
                             <div class="resume-icon">
                                 <i class="icon icon-basic-book"></i>
                             </div>
-                            <span>2014-2015</span><h4>University of Art</h4>
+                            <span>2009-2012</span><h4>SMPN 3 Glenmore</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                         </div><!-- end Education box 3 -->
                     </div><!-- end education-content -->
