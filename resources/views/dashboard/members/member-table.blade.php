@@ -193,7 +193,10 @@
                     </div>
                     <div class="form-group">
                         <label for="position">Position</label>
-                        <input name="position" type="text" class="form-control" id="position" placeholder="">
+                        <select name="position" id="field-4" class="selectpicker form-control" data-style="btn-blue">
+                             <option>Admin</option>
+                             <option>Member</option>
+                         </select>
                     </div>
                     
 

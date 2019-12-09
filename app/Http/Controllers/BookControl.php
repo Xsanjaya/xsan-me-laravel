@@ -19,7 +19,7 @@ class BookControl extends Controller
     {
         $books = Book::all();
         $book = $books->sortBy('penulisBK');
-        return view('dashboard.book-table',['book'=>$book]);
+        return view('dashboard.book.table-book',['book'=>$book]);
         
     }
 
@@ -29,6 +29,16 @@ class BookControl extends Controller
         Book::create($request->all());
         return redirect('dashboard/book')->with('pesan', 'Data Berhasil Ditambahkan');
     }
+
+    public function bookedit(Book $book, $id)
+    {
+        $book = $book->find($id);
+        return view('dashboard.book.edit-book',
+            [
+                'dbk'=>$book,
+                'id'=>$id,
+            ]);
+     }
 
     public function edit(Request $request, Book $book, $id)
     {

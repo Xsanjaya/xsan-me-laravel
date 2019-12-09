@@ -8,27 +8,20 @@ use Illuminate\Http\Request;
 
 class DashboardControl extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
+    
     public function index()
         {
             if(!auth()->user()){
                 return redirect('/login');
             }
-            return view('dashboard.index');
+
+            $jmlbook=Book::all()->count();
+            $jmluser=User::all()->count();
+
+            return view('dashboard.index', [
+                'jmlbook' => $jmlbook,
+                'jmluser' => $jmluser,
+            ]);
         }
 
     public function bookedit(Book $book, $id)
@@ -38,7 +31,7 @@ class DashboardControl extends Controller
                 [
                     'dbk'=>$book,
                     'id'=>$id,
-                ] );
+                ]);
            
         }
 

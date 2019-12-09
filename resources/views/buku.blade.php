@@ -73,7 +73,13 @@
                                              <td>{{ $bk->penulisBK }}</td>
                                              <td>{{ $bk->judulBK }}</td>
                                              <td>{{ $bk->kategoriBK }}</td>
-                                             <td><span class="badge label-table badge-success">{{ $bk->statusBK }}</span></td>
+                                             @if($bk->statusBK == 'Tersedia')
+                                                <td><span class="badge label-table badge-primary">{{ $bk->statusBK }}</span></td>
+                                             @elseif($bk->statusBK == 'Dipinjam')
+                                                <td><span class="badge label-table badge-success">{{ $bk->statusBK }}</span></td>
+                                            @else
+                                                <td><span class="badge label-table badge-danger">{{ $bk->statusBK }}</span></td>
+                                            @endif
                                         </tr>
                                         @endforeach
                                         </tbody>

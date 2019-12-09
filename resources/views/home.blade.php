@@ -64,14 +64,15 @@
                 <!-- <li class="page-link" data-page="portfolio">
                     <i class="icon icon-basic-case"></i>
                 </li> -->
-                <li>
-                    <a style="background: none; color: #" href="buku" onclick="window.location.href='buku'"><i class="icon icon-basic-book"></i></a>
-                </li>
+                
                 <li class="page-link" data-page="services">
                     <i class="icon icon-basic-gear"></i>
                 </li>
                 <li class="page-link" data-page="resume">
                     <i class="icon icon-basic-sheet-txt"></i>
+                </li>
+                <li>
+                    <a style="background: none; color: #" href="buku" onclick="window.location.href='buku'"><i class="icon icon-basic-book"></i></a>
                 </li>
                 <li class="page-link" data-page="blog">
                     <i class="icon icon-basic-message-multiple"></i>
