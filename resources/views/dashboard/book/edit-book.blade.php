@@ -38,6 +38,12 @@
                         </select>
                         </div>
                     </div>
+                    <div class="form-group row mb-3">
+                        <label for="inputJudul" class="col-3 col-form-label">Deskripsi Buku</label>
+                        <div class="col-9">
+                            <input type="" class="form-control" name="deskripsiBK" placeholder="Deskripsi Buku" value="{{$dbk->deskripsiBK}}">
+                        </div>
+                    </div>
 
                     <div class="form-group mb-0 justify-content-end row">
                         <div class="col-9">

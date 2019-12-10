@@ -292,7 +292,7 @@
                             <div class="resume-icon">
                                 <i class="icon icon-basic-book"></i>
                             </div>
-                            <span>2009-2012</span><h4>SMPN 3 Glenmore</h4>
+                            <span>2009-2012</span><h4>SMPN 2 CLURING , SMPN 3 GLENMORE</h4>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                         </div><!-- end Education box 3 -->
                     </div><!-- end education-content -->

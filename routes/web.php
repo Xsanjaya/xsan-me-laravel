@@ -29,4 +29,5 @@ Route::get('/dashboard/member{id}', 'MemberControl@edit');
 Route::post('/dashboard/addmember', 'MemberControl@register');
 Route::delete('/dashboard/mbrdel{id}', 'MemberControl@destroy');
 
-Route::get('/dashboard/blog', 'BlogControl@index');
+Route::get('/dashboard/blog', 'PostControl@index');
+Route::get('/dashboard/create-post', 'PostControl@crtPost');

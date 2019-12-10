@@ -6,26 +6,16 @@
     <div class="col-12">
         <div class="page-title-box">
             <div class="page-title-right">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
-                    <li class="breadcrumb-item active">Table Book</li>
-                </ol>
             </div>
             <h4 class="page-title">BOOK</h4>
         </div>
     </div>
-</div>     
+</div>
 <!-- end page title -->
 
 <div class="row">
     <div class="col-sm-12">
         <div class="card-box">
-            <h4 class="header-title">Add &amp; Remove Rows</h4>
-            <p class="sub-header">
-                Add or remove rows from your FooTable.
-            </p>
-
             <div class="mb-2">
                 <div class="row">
                     <div class="col-12 text-sm-center form-inline">
@@ -35,17 +25,16 @@
                         <div class="form-group">
                             <input id="demo-input-search2" type="text" placeholder="Search" class="form-control" autocomplete="off">
                         </div>
-                        <div class = "col-sm-7">
-                            <div    class = "text-sm-right">
-                                <button  data-toggle="modal" data-target="#modalImport" type="button" class="btn btn-light mb-2 emr-1">Import</button>
-                                <button type="button" class="btn btn-light mb-2"><a href="exportbook"
-                                >Export</a></button>
+                        <div class="col-sm-8">
+                            <div class="text-sm-right">
+                                <button data-toggle="modal" data-target="#modalImport" type="button" class="btn btn-light mb-2 mr-1">Import</button>
+                                <button type="button" class="btn btn-light mb-2"><a href="exportbook">Export</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                        
+
 
 
            <!-- Modal Import -->
@@ -104,6 +93,14 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="field-2" class="control-label">ISBN</label>
+                                        <input name="isbnBK" type="text" class="form-control" id="field-2" placeholder=" ISBN">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-5">
                                     <div class="form-group">
                                         <label for="field-3" class="control-label">Kategori</label>
@@ -130,11 +127,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer"> 
+                        <div class="modal-footer">
                             <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-info waves-effect waves-light">Create</button>
                         </div>
-                        </form>                         
+                        </form>
                     </div>
                 </div>
             </div>
@@ -170,7 +167,7 @@
                             @csrf
                             @method('delete')
                                 <button class=" btn btn-danger btn-xs btn-icon"><i class="fa fa-times"></i>
-                                </button> 
+                                </button>
                             </form>
 
                             <form name="edit" action="edit{{ $bk->id }}" class="d-inline">
