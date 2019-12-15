@@ -12,7 +12,7 @@
 
                             <div class="text-center w-75 m-auto">
                                 <a href="/">
-                                    <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
+                                    <span><img src="assets/images/logoX.png" alt="" height="22"></span>
                                 </a>
                                 <p class="text-muted mb-4 mt-3">Don't have an account? Create your account, it takes less than a minute</p>
                             </div>
@@ -86,7 +86,7 @@
     <!-- end page -->
 
     <footer class="footer footer-alt">
-        2019 &copy; by <a href="" class="text-white-50">xsan</a> 
+        2019 &copy; by <a href="" class="text-white-50">xsan</a>
     </footer>
 
     <!-- Vendor js -->

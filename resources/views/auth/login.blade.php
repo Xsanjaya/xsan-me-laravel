@@ -10,7 +10,7 @@
 
                             <div class="text-center w-75 m-auto">
                                 <a href="/">
-                                    <span><img src="assets/images/logo-dark.png" alt="" height="22"></span>
+                                    <span><img src="assets/images/logoX.png" alt="" height="22"></span>
                                 </a>
                                 <p class="text-muted mb-4 mt-3">Enter your email address and password to access admin panel.</p>
                             </div>
@@ -26,7 +26,7 @@
                                 <div class="form-group mb-3">
                                     <label for="password">{{ __('Password') }}</label>
                                     <input class="form-control @error('password') is-invalid @enderror" type="password" name="password" id="password" placeholder="Enter your password" required autocomplete="current-password">
-                                    
+
                                     @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
