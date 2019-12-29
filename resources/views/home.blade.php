@@ -37,7 +37,7 @@
         <![endif]-->
     </head>
     <body>
-        
+
         <!-- Preloader -->
         <div class="preloader">
             <div class="loader-container">
@@ -64,7 +64,7 @@
                 <!-- <li class="page-link" data-page="portfolio">
                     <i class="icon icon-basic-case"></i>
                 </li> -->
-                
+
                 <li class="page-link" data-page="services">
                     <i class="icon icon-basic-gear"></i>
                 </li>
@@ -258,7 +258,7 @@
     </section>
     <!-- end Services page -->
 
-    
+
         <!-- Pages Container -->
         <div class="container">
 
@@ -364,7 +364,7 @@
             <div id="blogSlider" class="owl-carousel">
                 <div class="blog-post-box">
                     <div class="blog-post-box-image">
-                        <img src="assetsHome/images/blog-img-1.jpg" alt=""> 
+                        <img src="assetsHome/images/blog-img-1.jpg" alt="">
                         <!-- Image source -->
                         <a href="postlink">
                         <!-- blog post link -->
@@ -429,11 +429,11 @@
                             </li>
                             <li>
                                 <h4>Email</h4>
-                                <p>xsan@xsan.me</p>
+                                <p> - </p>
                             </li>
                             <li>
                                 <h4>Address</h4>
-                                <p>x</p>
+                                <p>JL Langsep Raya No C17 Perumnas Patrang</p>
                             </li>
                         </ul>
                     </div><!-- end Contact Info -->
@@ -452,7 +452,7 @@
     </section>
     <!-- end Contact page -->
 
-            
+
 
         </div>
         <!-- end Pages Container -->

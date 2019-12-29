@@ -145,6 +145,7 @@
                         <th>Judul Buku</th>
                         <th data-hide="phone">Kategori</th>
                         <th data-hide="phone, tablet">Status</th>
+                        <th> Member </th>
                         <th data-sort-ignore="true" class="min-width">Action</th>
                     </tr>
                 </thead>
@@ -162,6 +163,7 @@
                         @else
                            <td><span class="badge label-table badge-danger">{{ $bk->statusBK }}</span></td>
                         @endif
+                        <td>{{ $bk->deskripsiBK }}</td>
                         <td class="text-sm-center">
                             <form action="del{{ $bk->id }}" method="post" class="d-inline">
                             @csrf
