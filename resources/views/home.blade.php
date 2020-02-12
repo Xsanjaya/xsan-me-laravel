@@ -472,5 +472,16 @@
         <script src="assetsHome/js/theme-plugins.min.js"></script>
         <!-- Custom Scripts -->
         <script src="assetsHome/js/scripts.min.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158284485-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-158284485-1');
+        </script>
+
     </body>
 </html>
