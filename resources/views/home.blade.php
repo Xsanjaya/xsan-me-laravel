@@ -277,7 +277,7 @@
                                 <i class="icon icon-basic-book"></i>
                             </div>
                             <span>2015-2020</span><h4>University of Jember</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            <p> Bachelor's Degree in Electrical Engineering, Jember University </p>
                         </div>
                         <!-- Education box 2 -->
                         <div class="education-box">
@@ -285,15 +285,15 @@
                                 <i class="icon icon-basic-book"></i>
                             </div>
                             <span>2012-2015</span><h4>SMK 17 Agustus 1945 Genteng</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            <p>Computer and Network Engineering in Vocational High School 17 Agustus 1945 Genteng </p>
                         </div>
                         <!-- Education box 3 -->
                         <div class="education-box">
                             <div class="resume-icon">
                                 <i class="icon icon-basic-book"></i>
                             </div>
-                            <span>2009-2012</span><h4>SMPN 2 CLURING , SMPN 3 GLENMORE</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            <span>2009-2012</span><h4>SMPN 3 GLENMORE</h4>
+                            <p>3Th Glenmore's National Junior High School</p>
                         </div><!-- end Education box 3 -->
                     </div><!-- end education-content -->
                                         <!-- Employment -->
