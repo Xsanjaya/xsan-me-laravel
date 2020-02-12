@@ -13,12 +13,12 @@ class CreateBooksTable extends Migration
      */
     public function up()
     {
-        Schema::create('books', function (Blueprint $table) 
+        Schema::create('books', function (Blueprint $table)
         {
             $table->bigIncrements('id');
             $table->char('penulisBK', 100);
             $table->char('judulBK', 100);
-            table->char('isbnBK', 40))->nullable();
+            $table->char('isbnBK', 40)->nullable();
             $table->char('kategoriBK', 20)->nullable();
             $table->longText('deskripsiBK')->nullable();
             $table->char('statusBK', 10)->default('Tersedia');
